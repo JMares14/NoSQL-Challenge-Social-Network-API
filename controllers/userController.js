@@ -64,7 +64,7 @@ module.exports = {
       ? res.status(404).json({ message: 'No user with this id'})
       : User.findOneAndUpdate(
         {_id: req.params.userId},
-        {$set: { friends: req.params.friendId}},
+        {$addToSet: { friends: req.params.friendId}},
         { new: true }
       )
       )
@@ -80,7 +80,7 @@ module.exports = {
 
 
     removeFriend(req,res) {
-      User.findByIdAndUpdate({ _id: req.params.userId },
+      User.findOneAndUpdate({ _id: req.params.userId },
         {$pull:{ friends: req.params.friendId}},
         {runValidators: true, new: true}
         

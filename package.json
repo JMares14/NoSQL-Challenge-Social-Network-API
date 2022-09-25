@@ -1,6 +1,25 @@
 {
   "dependencies": {
     "date-fns": "^2.29.3",
-    "mongoose": "^6.6.1"
-  }
+    "express": "^4.18.1",
+    "mongoose": "^6.6.1",
+    "nodemon": "^2.0.20"
+  },
+  "name": "nosql-challenge-social-network-api",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JMares14/NoSQL-Challenge-Social-Network-API.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JMares14/NoSQL-Challenge-Social-Network-API/issues"
+  },
+  "homepage": "https://github.com/JMares14/NoSQL-Challenge-Social-Network-API#readme"
 }
